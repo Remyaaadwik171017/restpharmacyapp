@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+<div class="row">
+    <div class="col"></div>
+    <div class="col-4">
+        <h1>Welcome Todo App {{request.user}}</h1></div>
+    <div class="col"></div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-7">
+            <table>
+            <td>
+                <tr><a href="{%url 'create'%}">createtodo</a></tr>
+                <tr><a href="{%url 'listalltodos'%}">listalltodos</a></tr>
+                <tr><a href="{%url 'logout'%}">Logout</a></tr>
+            </td>
+
+        </table>
+
+        </div>
+
+
+
+    </div>
+    <div class="col"></div>
+</div>
+</body>
+</html>
